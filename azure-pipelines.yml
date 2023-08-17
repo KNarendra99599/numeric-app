@@ -9,12 +9,7 @@ steps:
   inputs:
     SonarQube: 'My_SonarQube'
     scannerMode: 'Other'
-    extraProperties: |
-      # Additional properties that will be passed to the scanner,
-      # Put one key=value per line, example:
-      # sonar.exclusions=**/*.bin
-      sonar.projectKey=EKS_springboot-app.git_AYoCPQg7wuKuCZ8mWyIa
-      sonar.projectName=springboot-app.git
+
       
 - task: JavaToolInstaller@0
   inputs:
