@@ -9,7 +9,10 @@ steps:
   inputs:
     SonarQube: 'My_SonarQube'
     scannerMode: 'Other'
-
+    
+- task: SonarQubePublish@4
+  inputs:
+    pollingTimeoutSec: '300'
       
 - task: JavaToolInstaller@0
   inputs:
